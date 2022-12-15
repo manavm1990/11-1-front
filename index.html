@@ -2,18 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- TODO: Add favicon. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./src/style.css" />
-    <title>Vite ➕ Tailwind</title>
+    <title>Terms</title>
   </head>
   <body>
-    <h1
-      class="text-center text-3xl font-semibold text-red-500 md:text-5xl"
-    >
-      Hello
-    </h1>
+    <h1 class="text-4xl my-4 text-center font-black">Fetch Data</h1>
+
+    <main class="flex flex-col gap-y-8 items-center container mx-auto">
+      <div id="buttons">
+        <button type="button" class="px-4 py-2 rounded text-white bg-blue-500 text-lg font-semibold" data-fetch="terms">Fetch Terms</button>
+        <button type="button" class="px-4 py-2 rounded text-white bg-blue-500 text-lg font-semibold" data-fetch="pets">Fetch Pets</button>
+      </div>
+
+      <div id="display" class="grid grid-rows-2 grid-flow-col gap-4"></div>
+    </main>
 
     <script type="module" src="./src/index.js"></script>
   </body>
